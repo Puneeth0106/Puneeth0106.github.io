@@ -12,7 +12,8 @@ declare var VanillaTilt:any;
 })
 
 export class AchievementComponent implements OnInit,AfterViewInit {
-	public achievementData  = data['Achievement'];
+	public achievementData = data['Achievement']['cards'];
+	public galleryData = data['Achievement']['gallery'];
 	public checkScreenSize : boolean = screen.width >= 768;
 
 	constructor(private changeDetectorRef: ChangeDetectorRef) {
